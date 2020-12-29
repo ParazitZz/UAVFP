@@ -79,7 +79,7 @@ class UAV():
         if self.ParentGrid.verifyCell(x, y):
             self.x = x
             self.y = y
-            self.z = ParentGrid.hmap[x, y] + 1
+            self.z = self.ParentGrid.hmap[x, y] + 1
         else:
             print("Trying to move UAV outside the Parent Grid")
             exit(-1)
